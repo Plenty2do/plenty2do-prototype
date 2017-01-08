@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Plenty2do</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+<!--     <link href="offcanvas.css" rel="stylesheet"> -->
+    <link href="css/plenty2do.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="newUserSelected.html">Plenty2do</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+<!--
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+-->
+      </ul>
+<!--
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+-->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Manage Activities</a></li>
+        <li><a href="#">Post New Activity</a></li>
+        <li><a href="#">My Calendar</a></li>
+        <form class="navbar-form navbar-left">
+        <button type="submit" class="btn btn-default">Sign Out</button>
+      </form>
+<!--
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+-->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+	  	<div class="col-xs-12">
+		  	<center><h1 style="font-weight: 400; margin-top: 0px;" class="tagline">Find activities you'll <i class="fa fa-heart" style="color: red;" aria-hidden="true"></i>.<br class="visible-xs"> There's Plenty2do.</h1></center>
+	  	</div>
+	  	<div class="col-xs-12 hidden-xs hidden-sm">
+		  	<ul class="nav nav-pills" role="tablist">
+			  <li role="presentation" class="active"><a href="#">All</a></li>
+			  <li role="presentation"><a href="#">Attractions</a></li>
+			  <li role="presentation"><a href="#">Classes</a></li>
+			  <li role="presentation"><a href="#">Clubs</a></li>
+			  <li role="presentation"><a href="#">Events</a></li>
+			  <li role="presentation"><a href="#">Groups</a></li>
+			  <li role="presentation"><a href="#">Services</a></li>
+			  <li role="presentation"><a href="#">Trips</a></li>
+			  <li role="presentation"><a href="#">Volunteering</a></li>
+			  <li role="presentation"><a href="#">Posted by me</a></li>
+			</ul>
+	  	</div>
+	  	
+	  	<div class="col-xs-12">
+		  	<hr>
+	  	</div>
+	  	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 hidden-xs hidden-sm" id="sidebar" style="margin-bottom: 20px;">
+	  		<label>My Activity Level</label>
+	  		<table style="width: 100%">
+		  		<tr>
+			  		<td style="text-align: left"><img src="icons/seated.png" style="height: 20px;"></td>
+			  		<td style="text-align: center; width: 100%;"><img src="icons/walk.png" style="height: 20px;"></td>
+			  		<td style="text-align: right"><img src="icons/tennis.png" style="height: 20px;"></td>
+		  		</tr>
+	  		</table>
+	  		<input type="range" step="1" min="1" max="3" value="3">
+	  		
+	  		<label style="margin-top: 16px;">My Interests</label> <a href="newUserSelected.html">Change</a><BR>
+	  		<span class="label label-default art">Art</span>
+	  		<span class="label label-default community-service">Community Service</span>
+	  		<span class="label label-default gardening">Gardening</span>
+	  		<span class="label label-default fitness">Fitness/athletics</span>
+	  		<span class="label label-default self-improvement">Self Improvement</span><BR><BR>
+	  		<span style="font-size: .8em;"><input type="checkbox" class=""> Email me weekly updates</span>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-10">
+		<div class="row" style="margin-bottom: 10px;">
+			<div class="col-xs-12">
+			<div class="alert alert-info alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  Below are activities that match your interests.
+			</div>
+			<span class="hidden-xs hidden-sm">Show activities within </span>
+			<select id = "distance" class="form-control">
+	           <option value = "1">1 Mile</option>
+	           <option value = "2">2 Miles</option>
+	           <option value = "3" selected="">5 Miles</option>
+	           <option value = "4">10 Miles</option>
+	           <option value = "2">25 Miles</option>
+	           <option value = "3">50 Miles</option>
+	           <option value = "4">100 Miles</option>
+	         </select>
+			 of 
+			<input type="tel" class="form-control" id="zipCode" placeholder="zip" value="92103"> <span class="hidden-xs">happening </span>
+			<select id = "distance" class="form-control">
+	           <option value = "1">Today</option>
+	           <option value = "2">Tomorrow</option>
+	           <option value = "3" selected="">This Week</option>
+	           <option value = "4">Next Week</option>
+	           <option value = "2">This Month</option>
+	           <option value = "3">Next Month</option>
+	           <option value = "4">Next 3 Months</option>
+	         </select>
+			</div>
+        </div>
+          
+          <div class="row" style="margin-bottom: 16px; padding-bottom:8px; border-bottom: 1px solid lightgrey;">
+		  	<div class="col-xs-12 visible-xs">
+            <label>FREE Gardening Class - Bare Root Fruit Trees</label>
+		  	</div>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+	            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+				    <div class="carousel-inner">
+              <a href="activity.html">
+				        <div class="item active">
+                  <img src="images/events/winter-gardening-plants.jpg" alt="" class="img-responsive">
+				           <div class="carousel-caption">
+				           Class
+				           </div>
+				        </div>
+              </a>
+				    </div>
+				</div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+              <label class="hidden-xs">FREE Gardening Class - Bare Root Fruit Trees</label><BR class="hidden-xs">
+              <span class="">Sat, Jan 14, 10:00 AM - 12:00 PM (<a href="#">Add to Calendar</a>)<BR></span>
+              <img src="icons/walk.png" style="height: 20px;">
+              <span class="label label-default gardening">Gardening</span>
+              <a class="btn btn-primary btn-sm btn-group-justified" style="margin-top:8px; max-width: 400px;" href="activity.html" role="button">Learn more</a>
+              </div>
+              <div class="col-xs-12">
+              
+            </div>
+          </div><!--/row-->
+          
+          <div class="row" style="margin-bottom: 16px; padding-bottom:8px; border-bottom: 1px solid lightgrey;">
+		  	<div class="col-xs-12 visible-xs">
+			  	<label>Gentle Yoga</label>
+		  	</div>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+	            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="images/events/ayurveda_yoga.jpg" alt="" class="img-responsive">
+				           <div class="carousel-caption">
+				           Class
+				           </div>
+				        </div>
+				    </div>
+				</div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+              <label class="hidden-xs">Gentle Yoga</label><BR class="hidden-xs">
+              <span class="">Jan 3, 2017 at 8:30am (<a href="#">Add to Calendar</a>)<BR></span>
+              <img src="icons/walk.png" style="height: 20px;">
+              <span class="label label-default self-improvement">Self Improvement</span>
+			  <span class="label label-default fitness">Fitness/Athletics</span>
+              <a class="btn btn-primary btn-sm btn-group-justified" style="margin-top:8px; max-width: 400px;" href="#" role="button">Learn more</a>
+              </div>
+          </div><!--/row-->
+          
+          <div class="row" style="margin-bottom: 16px; padding-bottom:8px; border-bottom: 1px solid lightgrey;">
+		  	<div class="col-xs-12 visible-xs">
+			  	<label>Bring back that smile this New Year!</label>
+		  	</div>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+	            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="images/events/pexels-photo-87324.jpeg" alt="" class="img-responsive">
+				           <div class="carousel-caption">
+				           Class
+				           </div>
+				        </div>
+				    </div>
+				</div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+              <label class="hidden-xs">Bring back that smile this New Year!</label><BR class="hidden-xs">
+              <span class="">Saturday, Jan 14th from 3 PM - 4 PM (<a href="#">Add to Calendar</a>)<BR></span>
+              <img src="icons/seated.png" style="height: 20px;">
+			  <span class="label label-default continuing-education">Continuing Education</span>
+			  <span class="label label-default self-improvement">Self Improvement</span>
+              <a class="btn btn-primary btn-sm btn-group-justified" style="margin-top:8px; max-width: 400px;" href="#" role="button">Learn more</a>
+              </div>
+              <div class="col-xs-12">
+              
+            </div>
+          </div><!--/row-->
+          <div class="row" style="margin-bottom: 16px; padding-bottom:8px; border-bottom: 1px solid lightgrey;">
+		  	<div class="col-xs-12 visible-xs">
+			  	<label>Healthy Cities Tutoring</label>
+		  	</div>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+	            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="images/events/Healthy-Cities-logo1.jpg" alt="" class="img-responsive">
+				           <div class="carousel-caption">
+				           Volunteering
+				           </div>
+				        </div>
+				    </div>
+				</div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+              <label class="hidden-xs">Healthy Cities Tutoring</label><BR class="hidden-xs">
+              <span class="">Flexible Dates<BR></span>
+              <img src="icons/seated.png" style="height: 20px;">
+              <span class="label label-default community-service">Community Service</span>
+			  <span class="label label-default youth">Youth</span>
+              <a class="btn btn-primary btn-sm btn-group-justified" style="margin-top:8px; max-width: 400px;" href="#" role="button">Learn more</a>
+              </div>
+              <div class="col-xs-12">
+              
+            </div>
+          </div><!--/row-->
+          
+          <div class="row" style="margin-bottom: 16px; padding-bottom:8px; border-bottom: 1px solid lightgrey;">
+		  	<div class="col-xs-12 visible-xs">
+			  	<label>Bocce Ball</label>
+		  	</div>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+	            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="images/events/cityofsancarlos_COGL.png" alt="" class="img-responsive">
+				           <div class="carousel-caption">
+				           Club
+				           </div>
+				        </div>
+				    </div>
+				</div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+              <label class="hidden-xs">Bocce Ball</label><BR class="hidden-xs">
+              <span class="">TBA<BR></span>
+              <img src="icons/walk.png" style="height: 20px;">
+              <span class="label label-default fitness">Fitness/Athletics</span>
+			  <span class="label label-default socializing">Socializing</span>
+              <a class="btn btn-primary btn-sm btn-group-justified" style="margin-top:8px; max-width: 400px;" href="#" role="button">Learn more</a>
+              </div>
+              <div class="col-xs-12">
+              
+            </div>
+          </div><!--/row-->
+          
+          <div class="row" style="margin-bottom: 16px; padding-bottom:8px; border-bottom: 1px solid lightgrey;">
+		  	<div class="col-xs-12 visible-xs">
+			  	<label>Argentine Tango</label>
+		  	</div>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+	            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="images/events/20150254ee8201ca8a6.jpg" alt="" class="img-responsive">
+				           <div class="carousel-caption">
+				           Class
+				           </div>
+				        </div>
+				    </div>
+				</div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+              <label class="hidden-xs">Argentine Tango</label><BR class="hidden-xs">
+              <span class="">Jan 12, 2017 to Feb 9, 2017, Every Th 7:30pm to 10pm, Except Th, Jan 26, 2017 (<a href="#">Add to Calendar</a>)<BR></span>
+              <img src="icons/tennis.png" style="height: 20px;">
+              <span class="label label-default dancing">Dancing</span>
+			  <span class="label label-default socializing">Socializing</span>
+              <a class="btn btn-primary btn-sm btn-group-justified" style="margin-top:8px; max-width: 400px;" href="#" role="button">Learn more</a>
+              </div>
+              <div class="col-xs-12">
+              
+            </div>
+          </div><!--/row-->
+
+          
+          
+          
+          <nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+        </div><!--/.col-xs-12.col-sm-9-->
+</div>
+        
+	  <div class="row" id="footer">
+		  <div class="col-xs-12">
+			  <div class="well well-sm">
+				  <div class="row">
+					  <div class="col-xs-6 visible-xs visible-sm">
+							  	<label style="font-size: 70%;">Activity Type</label>
+							  	<select id = "type-drop-down" class="form-control">
+						           <option value = "1" selected="">All</option>
+						           <option value = "2">Attractions</option>
+						           <option value = "3">Classes</option>
+						           <option value = "4">Clubs</option>
+						           <option value = "2">Events</option>
+						           <option value = "3">Groups</option>
+						           <option value = "4">Services</option>
+						           <option value = "5">Trips</option>
+						           <option value = "6">Volunteering</option>
+						           <option value = "7">Posted by me</option>
+						         </select>
+					  </div>
+					  <div class="col-xs-6 visible-xs visible-sm" style="padding-bottom: 8px;">
+						  	<label style="font-size: 70%;">My Activity Level</label>
+						  	<table style="width: 100%">
+		  		<tr>
+			  		<td style="text-align: left"><img src="icons/seated.png" style="height: 20px;"></td>
+			  		<td style="text-align: center; width: 100%;"><img src="icons/walk.png" style="height: 20px;"></td>
+			  		<td style="text-align: right"><img src="icons/tennis.png" style="height: 20px;"></td>
+		  		</tr>
+	  		</table>
+	  		<input type="range" step="1" min="1" max="3" value="3">
+					  </div>
+			  </div>
+				  <input class="form-control input-lg hidden-xs" type="text" placeholder="Search...">
+				  <input class="form-control visible-xs" type="text" placeholder="Search...">
+			  </div>
+		  </div>
+	  </div>
+      <hr>
+
+      <footer style="padding-bottom: 100px;">
+        <p>&copy; 2016 Plenty2do</p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<!--     <script src="offcanvas.js"></script> -->
+  </body>
+</html>

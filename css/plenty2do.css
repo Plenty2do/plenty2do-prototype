@@ -1,0 +1,215 @@
+.badge {
+	background-color: #585858 !important;
+	font-size: 15px !important;
+	border: 1px solid white !important;
+	text-shadow: none !important;
+}
+
+.navbar{
+	border-radius: 0px;
+}
+
+body{
+	font-size: 20px;
+}
+
+.nav-pills{
+	margin: 0 auto;
+    display: table;
+    table-layout: auto;
+    float: none;
+    width: 100%;
+}
+
+.nav-pills > li{
+	display: table-cell;
+    float: none;
+    text-align: center;
+}
+
+.label-default{
+	background-color: #ffffff;
+	color: #656565;
+	border: 1px solid grey; 
+	display: -webkit-inline-box;
+	font-weight: 400;
+	margin-top: 8px;
+}
+
+@media (min-width: 768px){
+	.container {
+	    width: 100%;
+	}
+}
+
+#zipCode, #distance{
+	display: initial;
+	width: initial;
+}
+
+#zipCode{
+	width: 80px;
+}
+
+@media (max-width: 768px){
+	.tagline{
+		font-size: 20px;
+	}
+}
+
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover{
+	border: dashed 2px red;
+}
+
+/* LABELS */
+.label{
+	padding: .5em 0.6em 0.5em;
+	}
+
+.art{
+	background: -moz-linear-gradient(to bottom,rgba(0, 0, 0, 0.01), rgba(45, 45, 45, 0.57)), url('../images/painting-911804-squashed.jpg') no-repeat;
+	background: -webkit-gradient(linear, to bottom,rgba(0, 0, 0, 0.08), #2d2d2d), url('../images/painting-911804-squashed.jpg') no-repeat;
+	background: -webkit-linear-gradient(to bottom,rgba(0, 0, 0, 0.01), rgba(45, 45, 45, 0.57)), url('../images/painting-911804-squashed.jpg') no-repeat;
+	background: -o-linear-gradient(to bottom,rgba(0, 0, 0, 0.01), rgba(45, 45, 45, 0.57)), url('../images/painting-911804-squashed.jpg') no-repeat;
+	background: -ms-linear-gradient(to bottom,rgba(0, 0, 0, 0.01), rgba(45, 45, 45, 0.57)), url('../images/painting-911804-squashed.jpg') no-repeat;
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.01), rgba(45, 45, 45, 0.57)), url('../images/painting-911804-squashed.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: #333;
+}
+
+.community-service{
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.01), rgba(45, 45, 45, 0.57)), url('../images/wheelchair-1629490.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: #333;
+    }
+
+.gardening{
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.01), rgba(45, 45, 45, 0.57)), url('../images/flowers-garden-colorful-colourful.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: #333;
+	}   
+
+.fitness{
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.01), rgba(45, 45, 45, 0.57)), url('../images/action-1867700-squashed.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: #333;
+}
+
+.self-improvement{
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.01), rgba(45, 45, 45, 0.57)), url('../images/baby-boomer-442252-squashed.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: #333;
+}
+
+.continuing-education{
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.01), rgba(45, 45, 45, 0.57)), url('../images/book-1775268-squashed.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: #333;
+}
+
+.youth{
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.08), #2d2d2d), url('../images/children-602977-squashed.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: #333;
+}
+
+.socializing{
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.08), #2d2d2d), url('../images/diesel-1465034-squashed.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: #333;
+}
+
+.dancing{
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.08), #2d2d2d), url('../images/hamburg-1508779-squashed.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: #333;
+}
+
+
+/* END LABELS */
+
+.thumbnail{
+	    border: 2px solid #ddd;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 16%;
+    bottom: 0px;
+    left: 10px;
+    z-index: 10;
+    padding-top: 24px;
+    padding-bottom: 10px;
+    color: #fff;
+    text-align: left;
+    letter-spacing: .1em;
+/*     text-shadow: 0 2px 3px rgb(0, 0, 0); */
+    /* background: black; */
+}
+
+@media screen and (min-width: 768px){
+.carousel-caption {
+    right: 24%;
+    /* left: 20%; */
+    padding-bottom: 8px;
+}
+}
+
+label{
+	margin-bottom: 0px;
+}
+
+a {
+	font-size: 15px;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#footer .well{
+	margin-bottom: 5px;
+	}
+
+#footer .col-xs-12{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.item:before,.thumbnail:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.08), #2d2d2d);
+	opacity: .4; 
+  }
+}
+
+.btn{
+	font-size: 18px;
+}
+
+.form-control{
+	font-size: 20px;
+	}
