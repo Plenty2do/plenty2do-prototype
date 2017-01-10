@@ -34,82 +34,90 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Plenty2do</a>
-        </div>
+    <div class='fixed-top'>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Plenty2do</a>
+          </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!--
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+                </ul>
+                </li>
+              -->
+            </ul>
             <!--
-              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
-              </ul>
-              </li>
+              <form class="navbar-form navbar-left">
+              <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+              </form>
             -->
-          </ul>
-          <!--
-            <form class="navbar-form navbar-left">
-            <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-          -->
-          <ul class="nav navbar-nav navbar-right">
-            <form class="navbar-form navbar-left">
-              <button type="submit" class="btn btn-default">Sign In</button>
-            </form>
-            <!--
-              <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              </ul>
-              </li>
-            -->
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav><!-- /.navbar -->
-
-    <div class="container">
+            <ul class="nav navbar-nav navbar-right">
+              <form class="navbar-form navbar-left">
+                <button type="submit" class="btn btn-default">Sign In</button>
+              </form>
+              <!--
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                </ul>
+                </li>
+              -->
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav><!-- /.navbar -->
       <div class="col-xs-12">
-        <center><h1 style="font-weight: 400; margin-top: 0px;" class="tagline">Find activities you'll <i class="fa fa-heart" style="color: red;" aria-hidden="true"></i>.<br class="visible-xs"> There's Plenty2do.</h1></center>
+        <center>
+          <h1 style="font-weight: 400; margin-top: 0px;" class="tagline">Find activities you'll <i class="fa fa-heart" style="color: red;" aria-hidden="true"></i>.<br class="visible-xs"> There's Plenty2do.</h1>
+        <h4>Highlight as many interest categories as you have interests:</h4>
+        </center>
       </div>
 
       <div class="row">
         <div class="col-xs-12" >
-          <div class="well well-sm">
-            <center><a href="listings.html" class="btn btn-group-justified btn-primary">Show activities</a><a href="listings.html" style="font-size: 70%;">Show All</a></center>
+          <div class="well well-sm" style='background:none; border: 0'>
+            <center>
+              <a href="listings.html" class="btn  btn-primary" >Show events in selected categories</a>
+              <a href="listings.html" class="btn btn-default" style="font-size: 70%;">Show All</a>
+            </center>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="row">
+    <div class="container">
+
+      <div class="row" style='margin-top:220px'>
 
         <div class="col-xs-12 col-sm-2 col-sm-push-10">
           <div class="alert alert-info">
@@ -121,8 +129,11 @@
                 </div></center>
                 <div class="media-body" style='display: block; width:100%'>
                   <h3 class="media-heading">Welcome,</h3>
-                  <p style="font-size: .8em">my name is Laurel and I started this site to make it easier for you to find and share everything going on in our neighborhood.<BR>
-                  <BR>Please send me your questions, ideas, or interest in helping via: <a href="mailto:laurel@plenty2do.com">laurel@plenty2do.com</a>.</p>
+                  <p style="font-size: .8em">
+                    My name is Laurel, and I started this site so that you could easily find, share & enjoy everything going on in the community.
+                    <br /><br />
+                    Send questions or comments to <a href="mailto:laurel@plenty2do.com">laurel@plenty2do.com</a>.
+                  </p>
                 </div>
             </div>
           </div>
@@ -172,7 +183,7 @@
             <div id="mycarousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="item active">
-                  <a href="#" class="thumbnail" style="border: dashed 2px red;"><img src="images/painting-911804-squashed.jpg" alt="" class="img-responsive"></a>
+                  <a href="#" class="thumbnail" style="border: dashed 3px red;"><img src="images/painting-911804-squashed.jpg" alt="" class="img-responsive"></a>
                   <div class="carousel-caption">
                     Art <span class="badge">57</span>
                   </div>
@@ -224,7 +235,7 @@
             <div id="mycarousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="item active">
-                  <a href="#" class="thumbnail" style="border: dashed 2px red;"><img src="images/wheelchair-1629490.jpg" alt="" class="img-responsive"></a>
+                  <a href="#" class="thumbnail" style="border: dashed 3px red;"><img src="images/wheelchair-1629490.jpg" alt="" class="img-responsive"></a>
                   <div class="carousel-caption">
                     Community Service <span class="badge">4</span>
                   </div>
@@ -329,7 +340,7 @@
             <div id="mycarousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="item active">
-                  <a href="#" class="thumbnail" style="border: dashed 2px red;"><img src="images/action-1867700-squashed.jpg" alt="" class="img-responsive"></a>
+                  <a href="#" class="thumbnail" style="border: dashed 3px red;"><img src="images/action-1867700-squashed.jpg" alt="" class="img-responsive"></a>
                   <div class="carousel-caption">
                     Fitness/Athletics <span class="badge">4</span>
                   </div>
@@ -355,7 +366,7 @@
             <div id="mycarousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="item active">
-                  <a href="#" class="thumbnail" style="border: dashed 2px red;"><img src="images/flowers-garden-colorful-colourful.jpg" alt="" class="img-responsive"></a>
+                  <a href="#" class="thumbnail" style="border: dashed 3px red;"><img src="images/flowers-garden-colorful-colourful.jpg" alt="" class="img-responsive"></a>
                   <div class="carousel-caption">
                     Gardening <span class="badge">4</span>
                   </div>
@@ -540,7 +551,7 @@
             <div id="mycarousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="item active">
-                  <a href="#" class="thumbnail" style="border: dashed 2px red;"><img src="images/baby-boomer-442252-squashed.jpg" alt="" class="img-responsive"></a>
+                  <a href="#" class="thumbnail" style="border: dashed 3px red;"><img src="images/baby-boomer-442252-squashed.jpg" alt="" class="img-responsive"></a>
                   <div class="carousel-caption">
                     Self Improvement <span class="badge">4</span>
                   </div>
@@ -641,7 +652,7 @@
               </div>
             </div>
           </div>
-      </div>
+        </div>
 
       </div>
 
